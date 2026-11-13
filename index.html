@@ -10,7 +10,8 @@
 <meta content="#0d0507" name="theme-color"/>
 <meta content="WORMGPT" property="og:title"/>
 <meta content="WORMGPT – دردشة ذكاء اصطناعي مجانية" property="og:description"/>
-<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d0507'/%3E%3Cg fill='none' stroke='%23ff2233' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.5 6.6c0 3.4-9 3-9 7.4s8.2 3.6 8.2 7.4c0 2-1.7 3.4-4.2 3.4'/%3E%3Ccircle cx='20.5' cy='6.6' r='2.4' fill='%23ff2233' stroke='none'/%3E%3C/g%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<link rel="icon" type="image/jpeg" href="https://b.top4top.io/p_3969zjfux1.jpg"/>
+<link rel="apple-touch-icon" href="https://b.top4top.io/p_3969zjfux1.jpg"/>
 
 <script src="config.js"></script>
 <script src="prompt.js"></script>
@@ -673,8 +674,8 @@
             padding: 10px 0;
         }
         .welcome-logo {
-            width: 72px;
-            height: 72px;
+            width: 88px;
+            height: 88px;
             border-radius: 20px;
             display: flex;
             align-items: center;
@@ -1813,7 +1814,24 @@
                 min-width: 140px;
             }
         }
-    </style>
+    
+        .brand-logo-sidebar {
+            width: 34px;
+            height: 34px;
+            object-fit: cover;
+            border-radius: 6px;
+            flex-shrink: 0;
+            display: block;
+        }
+        .brand-logo-welcome {
+            width: 88px;
+            height: 88px;
+            object-fit: cover;
+            border-radius: 20px;
+            display: block;
+        }
+
+</style>
 </head>
 <body>
 <div id="root">
@@ -1821,12 +1839,7 @@
 <aside class="sidebar" id="sidebar">
 <div class="sidebar-header">
 <div class="sidebar-header-top">
-<div class="sidebar-logo">
-<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<path d="M20 6.2c0 3.3-9 2.9-9 7.2s8.2 3.5 8.2 7.2c0 1.9-1.7 3.4-4.2 3.4"></path>
-<circle cx="20" cy="6.2" fill="currentColor" r="2.3" stroke="none"></circle>
-<path d="M11 12.4h.01M14.6 16.6h.01" stroke-width="2.6"></path>
-</svg>
+<div class="sidebar-logo"><img src="https://b.top4top.io/p_3969zjfux1.jpg" alt="WORMGPT" class="brand-logo-sidebar"/>
 <span class="sidebar-logo-text">WORMGPT</span>
 </div>
 <button aria-label="طي الشريط الجانبي" data-i18n-aria="ariaCollapse" class="sidebar-collapse-btn" id="sidebarCollapseBtn">
@@ -1876,12 +1889,7 @@
 <div class="messages-wrap" id="messagesWrap">
 <div class="messages-col" id="messagesCol">
 <div class="welcome-msg" id="welcomeMsg">
-<div class="welcome-logo">
-<svg fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" viewBox="0 0 32 32">
-<path d="M20.5 6.6c0 3.4-9 3-9 7.4s8.2 3.6 8.2 7.4c0 2-1.7 3.4-4.2 3.4"></path>
-<circle cx="20.5" cy="6.6" fill="#ffffff" r="2.4" stroke="none"></circle>
-</svg>
-</div>
+<div class="welcome-logo" style="background:transparent;box-shadow:none;"><img src="https://b.top4top.io/p_3969zjfux1.jpg" alt="WORMGPT" class="brand-logo-welcome"/></div>
 <h1 class="welcome-title" data-i18n="welcomeTitle">كيف أقدر أساعدك اليوم؟</h1>
 <div class="welcome-sub" data-i18n="welcomeSub">اكتب سؤالك، أو ارفع ملفًا، أو سجّل صوتك — وسأجيبك فورًا.</div>
 </div>
@@ -2481,11 +2489,8 @@
 
             const WELCOME_HTML = '' +
                 '<div class="welcome-msg" id="welcomeMsg">' +
-                '<div class="welcome-logo">' +
-                '<svg fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" viewBox="0 0 32 32">' +
-                '<path d="M20.5 6.6c0 3.4-9 3-9 7.4s8.2 3.6 8.2 7.4c0 2-1.7 3.4-4.2 3.4"></path>' +
-                '<circle cx="20.5" cy="6.6" fill="#ffffff" r="2.4" stroke="none"></circle>' +
-                '</svg>' +
+                '<div class="welcome-logo" style="background:transparent;box-shadow:none;">' +
+                '<img src="https://b.top4top.io/p_3969zjfux1.jpg" alt="WORMGPT" class="brand-logo-welcome"/>' +
                 '</div>' +
                 '<h1 class="welcome-title"></h1>' +
                 '<div class="welcome-sub"></div>' +
